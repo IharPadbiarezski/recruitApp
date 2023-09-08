@@ -12,6 +12,6 @@ const db = mysql.createConnection({
 
 })
 
-app.listen('8800', () => {
+app.listen(process.env.PORT, () => {
     console.log("hi")
 })
