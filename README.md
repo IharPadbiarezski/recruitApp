@@ -11,7 +11,7 @@ Application to recruit
  ``` npm install ```
 
  Start server
- ``` npm start ```
+ ``` npm run dev ```
 
 
 
@@ -28,3 +28,8 @@ Application to recruit
  ``` npm start ```
 
  Make sure you should have .env file in the folder backend
+
+
+ Branch names starts with name of proceess (feat/fix) and add the name of task or component
+
+ Example feat_button_component
