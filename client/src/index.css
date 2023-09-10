@@ -1,3 +1,5 @@
+@import "https://mihapprod.zeroheight.com/api/token_management/token_set/2150/export?format=css";
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -34,6 +36,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: var(--text-txt-primaryy);
 }
 
 button {

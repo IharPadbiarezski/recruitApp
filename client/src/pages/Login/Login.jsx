@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../components/Button/Button'
 
 const Login = () => {
   return (
@@ -17,10 +18,10 @@ const Login = () => {
                 </div>
             {/* </div> */}
             <div>
-                <a href="">Забыли пароль?</a>
-                <input type="submit" value={'Войти'}/>
+                <Button>Забыли пароль?</Button>
+                <Button>Войти</Button>
             </div>
-        </form>
+        </form>s
     </div>
   )
 }
