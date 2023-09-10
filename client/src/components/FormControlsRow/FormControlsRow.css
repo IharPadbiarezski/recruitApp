@@ -1,0 +1,6 @@
+.form-controls-row {
+    display: flex;
+    height: 81px;
+    justify-content: space-between;
+    align-items: center;
+}
