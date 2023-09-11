@@ -1,8 +1,8 @@
 import React from 'react'
 import FormNameRow from '../../components/FormNameRow/FormNameRow'
 import FormControlsRow from '../../components/FormControlsRow/FormControlsRow'
-import Input from '../../components/Input/Input'
-import Link from '../../components/Link/Link'
+import Input from '../../components/ui/uikit/Input/Input'
+import Link from '../../components/ui/uikit/Link/Link'
 import "./Login.css"
 
 const params = {
