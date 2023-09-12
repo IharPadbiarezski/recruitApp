@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom'
 import './App.css'
-import Login from './pages/Login/Login'
+import UIKit from './pages/UIKit/UIKit.jsx'
 
 const router = createBrowserRouter([
   {
@@ -12,8 +12,8 @@ const router = createBrowserRouter([
     element: <div>Hello world!</div>,
   },
   {
-    path: "/login",
-    element: <Login />,
+    path: "/uikit",
+    element: <UIKit/>,
   },
 ]);
 
