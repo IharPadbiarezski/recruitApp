@@ -1,22 +1,20 @@
-import React from 'react'; 
+import React, {useState} from 'react'; 
 import './Button.css'
 
 
-function Button(props) {
-    const { children , style } = props
+const Button = ({ style, text }) => {
+    const [isActive, setActive] = useState("false");
+
+    const handleToggle = () => {
+        setActive(!isActive);
+    };
+
     return (
-        <button style={style}>{children}</button>
+    //   <button className={style} onClick={onclick}>
+        <button className={isActive ? style : "filled--loading"} onClick={handleToggle}>
+        {text}
+      </button>
     );
-}
-
-
-/*function Button(props) {
-    const Button = ({ children , style }) => {
-        return (
-        <button style={style}>{children}</button>
-        )
-    }
-}
-*/
+  };
 
 export default Button
