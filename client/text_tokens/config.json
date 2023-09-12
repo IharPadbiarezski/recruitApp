@@ -1,143 +1,322 @@
 {
-  "source": ["output.json"],
-  "platforms": {
-    "css": {
-      "transformGroup": "css",
-      "buildPath": "build/css/",
-      "files": [{
-        "destination": "_variables.css",
-        "format": "css/variables"
-      }]
+  "Large-title": {
+    "lt-3-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "48px",
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.3px"
+      }
     },
-    "android": {
-      "transformGroup": "android",
-      "buildPath": "build/android/",
-      "files": [{
-        "destination": "font_dimens.xml",
-        "format": "android/fontDimens"
-      },{
-        "destination": "colors.xml",
-        "format": "android/colors"
-      }]
+    "lt-3-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "48px",
+        "fontFamily": "Inter",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.3px"
+      }
     },
-    "compose": {
-      "transformGroup": "compose",
-      "buildPath": "build/compose/",
-      "files": [{
-        "destination": "StyleDictionaryColor.kt",
-        "format": "compose/object",
-        "className": "StyleDictionaryColor",
-        "packageName": "StyleDictionaryColor",
-        "filter": {
-          "attributes": {
-            "category": "color"
-          }
-        }
-      },{
-        "destination": "StyleDictionarySize.kt",
-        "format": "compose/object",
-        "className": "StyleDictionarySize",
-        "packageName": "StyleDictionarySize",
-        "type": "float",
-        "filter": {
-          "attributes": {
-            "category": "size"
-          }
-        }
-      }]
+    "lt-2-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "64px",
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
     },
-    "ios": {
-      "transformGroup": "ios",
-      "buildPath": "build/ios/",
-      "files": [{
-        "destination": "StyleDictionaryColor.h",
-        "format": "ios/colors.h",
-        "className": "StyleDictionaryColor",
-        "type": "StyleDictionaryColorName",
-        "filter": {
-          "attributes": {
-            "category": "color"
-          }
-        }
-      },{
-        "destination": "StyleDictionaryColor.m",
-        "format": "ios/colors.m",
-        "className": "StyleDictionaryColor",
-        "type": "StyleDictionaryColorName",
-        "filter": {
-          "attributes": {
-            "category": "color"
-          }
-        }
-      },{
-        "destination": "StyleDictionarySize.h",
-        "format": "ios/static.h",
-        "className": "StyleDictionarySize",
-        "type": "float",
-        "filter": {
-          "attributes": {
-            "category": "size"
-          }
-        }
-      },{
-        "destination": "StyleDictionarySize.m",
-        "format": "ios/static.m",
-        "className": "StyleDictionarySize",
-        "type": "float",
-        "filter": {
-          "attributes": {
-            "category": "size"
-          }
-        }
-      }]
+    "lt-2-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "64px",
+        "fontFamily": "Inter",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
     },
-    "ios-swift": {
-      "transformGroup": "ios-swift",
-      "buildPath": "build/ios-swift/",
-      "files": [{
-        "destination": "StyleDictionary+Class.swift",
-        "format": "ios-swift/class.swift",
-        "className": "StyleDictionaryClass",
-        "filter": {}
-      },{
-        "destination": "StyleDictionary+Enum.swift",
-        "format": "ios-swift/enum.swift",
-        "className": "StyleDictionaryEnum",
-        "filter": {}
-      },{
-        "destination": "StyleDictionary+Struct.swift",
-        "format": "ios-swift/any.swift",
-        "className": "StyleDictionaryStruct",
-        "filter": {},
-        "options": {
-          "imports": "SwiftUI",
-          "objectType": "struct",
-          "accessControl": "internal"
-        }
-      }]
+    "lt-1-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "80px",
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.5px"
+      }
     },
-    "ios-swift-separate-enums": {
-      "transformGroup": "ios-swift-separate",
-      "buildPath": "build/ios-swift/",
-      "files": [{
-        "destination": "StyleDictionaryColor.swift",
-        "format": "ios-swift/enum.swift",
-        "className": "StyleDictionaryColor",
-        "filter": {
-          "attributes": {
-            "category": "color"
-          }
-        }
-      },{
-        "destination": "StyleDictionarySize.swift",
-        "format": "ios-swift/enum.swift",
-        "className": "StyleDictionarySize",
-        "filter": {
-          "attributes": {
-            "category": "size"
-          }
-        }
-      }]
+    "lt-1-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "80px",
+        "fontFamily": "Inter",
+        "fontWeight": 500,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.5px"
+      }
+    }
+  },
+  "Title": {
+    "t-3-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "24px",
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "t-3-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "24px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "t-2-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "28px",
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "t-2-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "28px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "t-1-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "32px",
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "t-1-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "32px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    }
+  },
+  "Text": {
+    "txt-3-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "16px",
+        "fontFamily": "Inter",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "txt-3-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "16px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "txt-2-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "18px",
+        "fontFamily": "Inter",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "txt-2-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "18px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "txt-1-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "20px",
+        "fontFamily": "Inter",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "txt-1-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "20px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    }
+  },
+  "Caption": {
+    "cn-3-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "10px",
+        "fontFamily": "Inter",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "cn-3-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "10px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "cn-2-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "12px",
+        "fontFamily": "Inter",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "cn-2-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "12px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "cn-1-regular-strikethrough": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "cn-1-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    },
+    "cn-1-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "14px",
+        "fontFamily": "Inter",
+        "fontWeight": 600,
+        "lineHeight": 1.4,
+        "letterSpacing": "0px"
+      }
+    }
+  },
+  "Capital": {
+    "cl-3-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "9px",
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": "1.5px"
+      }
+    },
+    "cl-3-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "9px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.5px"
+      }
+    },
+    "cl-2-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "11px",
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": "1.5px"
+      }
+    },
+    "cl-2-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "11px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.5px"
+      }
+    },
+    "cl-1-strong": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "13px",
+        "fontFamily": "Inter",
+        "fontWeight": 700,
+        "lineHeight": 1.4,
+        "letterSpacing": "1.5px"
+      }
+    },
+    "cl-1-regular": {
+      "$type": "typography",
+      "$value": {
+        "fontSize": "13px",
+        "fontFamily": "Inter",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "0.5px"
+      }
     }
   }
 }

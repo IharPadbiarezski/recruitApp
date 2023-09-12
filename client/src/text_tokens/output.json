@@ -1,858 +1,12 @@
 {
-  "gradient-01": {
-    "$type": {
-      "value": "gradient",
-      "type": "other"
-    },
-    "$value": {
-      "0": {
-        "color": {
-          "value": "#FFFFFF00",
-          "type": "other"
-        },
-        "position": {
-          "value": 0,
-          "type": "other"
-        }
-      },
-      "1": {
-        "color": {
-          "value": "#FFFFFF",
-          "type": "other"
-        },
-        "position": {
-          "value": 1,
-          "type": "other"
-        }
-      }
-    }
-  },
-  "secondary": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#CDD6DA40",
-      "type": "other"
-    }
-  },
-  "primary": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#11111A26",
-      "type": "other"
-    }
-  },
-  "i-tertiary": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#B2B2B4",
-      "type": "other"
-    }
-  },
-  "i-secondary": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#EBEBF599",
-      "type": "other"
-    }
-  },
-  "i-primary": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#303233",
-      "type": "other"
-    }
-  },
-  "bg-secondary-perm-light": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#F3F5F6",
-      "type": "other"
-    }
-  },
-  "bg-secondary": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#F3F5F6",
-      "type": "other"
-    }
-  },
-  "bg-primary-perm-light": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#F3F5F6",
-      "type": "other"
-    }
-  },
-  "bg-primary": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FFFFFF",
-      "type": "other"
-    }
-  },
-  "overlay": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#0000000D",
-      "type": "other"
-    }
-  },
-  "6-level": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#D1D1E0",
-      "type": "other"
-    }
-  },
-  "5-level": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#E5E5EA",
-      "type": "other"
-    }
-  },
-  "4-level": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#D4D4DB",
-      "type": "other"
-    }
-  },
-  "3-level": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#C9C9CF",
-      "type": "other"
-    }
-  },
-  "2-level": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#AEAEB2",
-      "type": "other"
-    }
-  },
-  "1-level": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#8E8E93",
-      "type": "other"
-    }
-  },
-  "green": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#B9C7BD",
-      "type": "other"
-    }
-  },
-  "red": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FFEEED",
-      "type": "other"
-    }
-  },
-  "yellow-20": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FFCC0033",
-      "type": "other"
-    }
-  },
-  "yellow-10": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FFCC001A",
-      "type": "other"
-    }
-  },
-  "purple": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#AF52DE",
-      "type": "other"
-    }
-  },
-  "white": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FFFFFF",
-      "type": "other"
-    }
-  },
-  "black": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#000000",
-      "type": "other"
-    }
-  },
-  "pink": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FF2D55",
-      "type": "other"
-    }
-  },
-  "blue": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#0A7AFF",
-      "type": "other"
-    }
-  },
-  "cyan": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#5AC8FA",
-      "type": "other"
-    }
-  },
-  "yellow": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FFCC00",
-      "type": "other"
-    }
-  },
-  "orange": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FF9500",
-      "type": "other"
-    }
-  },
-  "primary-50": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#6F1DF480",
-      "type": "other"
-    }
-  },
-  "bg-secondary-50": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#F3F5F680",
-      "type": "other"
-    }
-  },
-  "bg-secondary-90": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#F3F5F6E6",
-      "type": "other"
-    }
-  },
-  "bg-primary-50": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FFFFFF80",
-      "type": "other"
-    }
-  },
-  "bg-primary-70": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FFFFFFB3",
-      "type": "other"
-    }
-  },
-  "bg-primary-90": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#FFFFFFE6",
-      "type": "other"
-    }
-  },
-  "cpl-3-strong": {
+  "txt-1-regular": {
     "$type": {
       "value": "typography",
       "type": "other"
     },
     "$value": {
       "fontSize": {
-        "value": "9px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 700,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "1.5px",
-        "type": "other"
-      }
-    }
-  },
-  "cpl-3-regular": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "9px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 400,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0.5px",
-        "type": "other"
-      }
-    }
-  },
-  "cpl-2-strong": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "11px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 700,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "1.5px",
-        "type": "other"
-      }
-    }
-  },
-  "cpl-2-regular": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "11px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 400,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0.5px",
-        "type": "other"
-      }
-    }
-  },
-  "cpl-1-strong": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "13px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 700,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "1.5px",
-        "type": "other"
-      }
-    }
-  },
-  "cpl-1-regular": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "13px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 400,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0.5px",
-        "type": "other"
-      }
-    }
-  },
-  "c-3-strong": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "10px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 600,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0px",
-        "type": "other"
-      }
-    }
-  },
-  "c-3-regular": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "10px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 400,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0px",
-        "type": "other"
-      }
-    }
-  },
-  "c-2-strong": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "12px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 600,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0px",
-        "type": "other"
-      }
-    }
-  },
-  "c-2-regular": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "12px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 400,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0px",
-        "type": "other"
-      }
-    }
-  },
-  "c-1-regular-strikethrough": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "14px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 400,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0px",
-        "type": "other"
-      }
-    }
-  },
-  "c-1-regular": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "14px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 400,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0px",
-        "type": "other"
-      }
-    }
-  },
-  "c-1-strong": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "14px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 600,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0px",
-        "type": "other"
-      }
-    }
-  },
-  "txt-tertiary": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#3C3C4380",
-      "type": "other"
-    }
-  },
-  "txt-secondary": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#3C3C43",
-      "type": "other"
-    }
-  },
-  "txt-primary": {
-    "$type": {
-      "value": "color",
-      "type": "other"
-    },
-    "$value": {
-      "value": "#000000",
-      "type": "other"
-    }
-  },
-  "txt-3-strong": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "16px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 600,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0px",
-        "type": "other"
-      }
-    }
-  },
-  "txt-3-regular": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "16px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 400,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0px",
-        "type": "other"
-      }
-    }
-  },
-  "txt-2-strong": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "18px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 600,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0px",
-        "type": "other"
-      }
-    }
-  },
-  "txt-2-regular": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "18px",
+        "value": "20px",
         "type": "other"
       },
       "fontFamily": {
@@ -901,14 +55,14 @@
       }
     }
   },
-  "txt-1-regular": {
+  "txt-2-regular": {
     "$type": {
       "value": "typography",
       "type": "other"
     },
     "$value": {
       "fontSize": {
-        "value": "20px",
+        "value": "18px",
         "type": "other"
       },
       "fontFamily": {
@@ -929,14 +83,14 @@
       }
     }
   },
-  "t-3-strong": {
+  "txt-2-strong": {
     "$type": {
       "value": "typography",
       "type": "other"
     },
     "$value": {
       "fontSize": {
-        "value": "24px",
+        "value": "18px",
         "type": "other"
       },
       "fontFamily": {
@@ -944,7 +98,7 @@
         "type": "other"
       },
       "fontWeight": {
-        "value": 700,
+        "value": 600,
         "type": "other"
       },
       "lineHeight": {
@@ -957,14 +111,14 @@
       }
     }
   },
-  "t-3-regular": {
+  "txt-3-regular": {
     "$type": {
       "value": "typography",
       "type": "other"
     },
     "$value": {
       "fontSize": {
-        "value": "24px",
+        "value": "16px",
         "type": "other"
       },
       "fontFamily": {
@@ -985,14 +139,14 @@
       }
     }
   },
-  "t-2-strong": {
+  "txt-3-strong": {
     "$type": {
       "value": "typography",
       "type": "other"
     },
     "$value": {
       "fontSize": {
-        "value": "28px",
+        "value": "16px",
         "type": "other"
       },
       "fontFamily": {
@@ -1000,7 +154,7 @@
         "type": "other"
       },
       "fontWeight": {
-        "value": 700,
+        "value": 600,
         "type": "other"
       },
       "lineHeight": {
@@ -1013,14 +167,14 @@
       }
     }
   },
-  "t-2-regular": {
+  "t-1-regular": {
     "$type": {
       "value": "typography",
       "type": "other"
     },
     "$value": {
       "fontSize": {
-        "value": "28px",
+        "value": "32px",
         "type": "other"
       },
       "fontFamily": {
@@ -1069,14 +223,14 @@
       }
     }
   },
-  "t-1-regular": {
+  "t-2-regular": {
     "$type": {
       "value": "typography",
       "type": "other"
     },
     "$value": {
       "fontSize": {
-        "value": "32px",
+        "value": "28px",
         "type": "other"
       },
       "fontFamily": {
@@ -1097,70 +251,14 @@
       }
     }
   },
-  "l-t-3-strong": {
+  "t-2-strong": {
     "$type": {
       "value": "typography",
       "type": "other"
     },
     "$value": {
       "fontSize": {
-        "value": "48px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 700,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0.3px",
-        "type": "other"
-      }
-    }
-  },
-  "l-t-3-regular": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "48px",
-        "type": "other"
-      },
-      "fontFamily": {
-        "value": "Inter",
-        "type": "other"
-      },
-      "fontWeight": {
-        "value": 500,
-        "type": "other"
-      },
-      "lineHeight": {
-        "value": 1.4,
-        "type": "other"
-      },
-      "letterSpacing": {
-        "value": "0.3px",
-        "type": "other"
-      }
-    }
-  },
-  "l-t-2-strong": {
-    "$type": {
-      "value": "typography",
-      "type": "other"
-    },
-    "$value": {
-      "fontSize": {
-        "value": "64px",
+        "value": "28px",
         "type": "other"
       },
       "fontFamily": {
@@ -1181,14 +279,70 @@
       }
     }
   },
-  "l-t-2-regular": {
+  "t-3-regular": {
     "$type": {
       "value": "typography",
       "type": "other"
     },
     "$value": {
       "fontSize": {
-        "value": "64px",
+        "value": "24px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 400,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0px",
+        "type": "other"
+      }
+    }
+  },
+  "t-3-strong": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "24px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 700,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0px",
+        "type": "other"
+      }
+    }
+  },
+  "lt-1-regular": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "80px",
         "type": "other"
       },
       "fontFamily": {
@@ -1204,12 +358,12 @@
         "type": "other"
       },
       "letterSpacing": {
-        "value": "0px",
+        "value": "-0.5px",
         "type": "other"
       }
     }
   },
-  "l-t-1-strong": {
+  "lt-1-strong": {
     "$type": {
       "value": "typography",
       "type": "other"
@@ -1237,14 +391,14 @@
       }
     }
   },
-  "l-t-1-regular": {
+  "lt-2-regular": {
     "$type": {
       "value": "typography",
       "type": "other"
     },
     "$value": {
       "fontSize": {
-        "value": "80px",
+        "value": "64px",
         "type": "other"
       },
       "fontFamily": {
@@ -1260,7 +414,455 @@
         "type": "other"
       },
       "letterSpacing": {
-        "value": "-0.5px",
+        "value": "0px",
+        "type": "other"
+      }
+    }
+  },
+  "lt-2-strong": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "64px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 700,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0px",
+        "type": "other"
+      }
+    }
+  },
+  "lt-3-regular": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "48px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 500,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0.3px",
+        "type": "other"
+      }
+    }
+  },
+  "lt-3-strong": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "48px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 700,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0.3px",
+        "type": "other"
+      }
+    }
+  },
+  "cl-1-regular": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "13px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 400,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0.5px",
+        "type": "other"
+      }
+    }
+  },
+  "cl-1-strong": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "13px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 700,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "1.5px",
+        "type": "other"
+      }
+    }
+  },
+  "cl-2-regular": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "11px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 400,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0.5px",
+        "type": "other"
+      }
+    }
+  },
+  "cl-2-strong": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "11px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 700,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "1.5px",
+        "type": "other"
+      }
+    }
+  },
+  "cl-3-regular": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "9px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 400,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0.5px",
+        "type": "other"
+      }
+    }
+  },
+  "cl-3-strong": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "9px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 700,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "1.5px",
+        "type": "other"
+      }
+    }
+  },
+  "cn-1-strong": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "14px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 600,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0px",
+        "type": "other"
+      }
+    }
+  },
+  "cn-1-regular": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "14px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 400,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0px",
+        "type": "other"
+      }
+    }
+  },
+  "cn-1-regular-strikethrough": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "14px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 400,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0px",
+        "type": "other"
+      }
+    }
+  },
+  "cn-2-regular": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "12px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 400,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0px",
+        "type": "other"
+      }
+    }
+  },
+  "cn-2-strong": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "12px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 600,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0px",
+        "type": "other"
+      }
+    }
+  },
+  "cn-3-regular": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "10px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 400,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0px",
+        "type": "other"
+      }
+    }
+  },
+  "cn-3-strong": {
+    "$type": {
+      "value": "typography",
+      "type": "other"
+    },
+    "$value": {
+      "fontSize": {
+        "value": "10px",
+        "type": "other"
+      },
+      "fontFamily": {
+        "value": "Inter",
+        "type": "other"
+      },
+      "fontWeight": {
+        "value": 600,
+        "type": "other"
+      },
+      "lineHeight": {
+        "value": 1.4,
+        "type": "other"
+      },
+      "letterSpacing": {
+        "value": "0px",
         "type": "other"
       }
     }
