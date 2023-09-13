@@ -26,9 +26,11 @@ const UIKit = () => {
             </div>
             <p>&Buttons</p>
             <div className='Surface'>
-            <Button style={'Filled-XL'} text={'Filled'} />
-            <Button style={'Outlined-XL'} text={'Outlined'} />
-            <Button style={'Transparent-XL'} text={'Transparent'} />
+                <Button style={'filled-xl-fixed'} text={'Filled'} />
+                <Button style={'outlined-xl-fixed'} text={'Outlined'} />
+                <Button style={'transparent-xl-fixed'} text={'Transparent'} />
+
+                <Button style={'filled-xl-hug'} icon={'icon-placeholder'} text={'Filled'} />
             {/* <button className='Filled'>Button</button> */}
              </div>
         </div>
