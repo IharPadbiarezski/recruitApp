@@ -1,8 +1,8 @@
 import React from 'react'
+import{ Link } from 'react-router-dom'
 import FormNameRow from '../../components/FormNameRow/FormNameRow'
 import FormControlsRow from '../../components/FormControlsRow/FormControlsRow'
 import Input from '../../components/ui/uikit/Input/Input'
-import Link from '../../components/ui/uikit/Link/Link'
 import "./Login.css"
 
 const params = {
@@ -21,14 +21,15 @@ const params = {
         }
     }
 }
+
 const ManageButtons = () => {
     return (
-        <Link value='Забыли пароль?' className={'link__button'} />
+        <Link to={'/restore'}>Забыли пароль?</Link>
     )
 }
 
 const SubmitButtons = () => {
-    return (<input type="submit" value={'Войти'}/>)
+    return (<button>Войти</button>)
 }
 
 const Login = () => {
