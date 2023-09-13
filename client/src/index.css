@@ -1,11 +1,10 @@
 @import "https://mihapprod.zeroheight.com/api/token_management/token_set/2150/export?format=css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: Inter, system-ui, serif;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
