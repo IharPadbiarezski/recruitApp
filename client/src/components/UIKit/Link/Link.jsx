@@ -1,9 +1,9 @@
 import React from 'react'
 import './Link.css'
 
-const Link = ({ value, className }) => {
+const Link = ({ text, link, underline }) => {
   return (
-    <a className={className} href="">{value}</a>
+    <a className={underline} href={link}>{text}</a>
   )
 }
 

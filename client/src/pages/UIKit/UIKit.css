@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-.ButtonsSurface{
+.Surface{
     display: flex;
     padding: 80px;
     align-items: flex-start;
