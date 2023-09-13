@@ -1,0 +1,184 @@
+@import "https://mihapprod.zeroheight.com/api/token_management/token_set/2150/export?format=css";
+
+:root {
+    --xl-height: 64px;
+    --l-height: 56px;
+    --m-height: 48px;
+    --s-height: 40px;
+    --xs-height: 32px;
+    --corner: 8px;
+    
+  }
+
+/* FILLED STYLE */
+.Filled-XL, .filled--loading, .Filled-L, .Filled-M, .Filled-S, .Filled-XS {
+    display: flex;
+    width: 325px; 
+    height: var(--xl-height);
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: var(--corner);
+    background: var(--brand-primary, #6F1DF4);
+    box-sizing: border-box;
+
+    color: var(--pallete-white, #FFF);
+    text-align: center;
+    /* Text/3 strong */
+    font-style: normal;
+    font-size: var(--txt-3-strong-value-font-size);
+    font-family: var( --txt-3-strong-value-font-family);
+    font-weight: var(--txt-3-strong-value-font-weight);
+    line-height: var(--txt-3-strong-value-line-height);
+    letter-spacing: var(--txt-3-strong-value-letter-spacing);
+}
+.Filled-L{height: var(--l-height);} 
+.Filled-M{height: var(--m-height);}
+.Filled-S{height: var(--s-height);}
+.Filled-XS{height: var(--xs-height);}
+
+.Filled-XL:hover, .Filled-L:hover, .Filled-M:hover, .Filled-S:hover, .Filled-XS:hover{
+    border: none;
+}
+.Filled-XL:active, .Filled-L:active, .Filled-M:active, .Filled-S:active, .Filled-XS:active{
+    background: var(--brand-primary-tapped, #833CF8);
+}
+
+.Filled-XL:disabled, .Filled-L:disabled, .Filled-M:disabled, .Filled-S:disabled, .Filled-XS:disabled{
+    background: var(--brand-primary-50, rgba(111, 29, 244, 0.50));
+}
+
+.filled--loading::before {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    content: "";
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+
+/* OUTLINED STYLE */
+
+  .Outlined-XL, .outlined--loading, .Outlined-L, .Outlined-M, .Outlined-S, .Outlined-XS  {
+    display: flex;
+    width: 325px; 
+    height: var(--xl-height);
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: var(--corner);
+    border: 2px solid var(--brand-primary, #6F1DF4);
+    background: transparent;
+    box-sizing: border-box;
+
+    color: var(--text-txt-primary, #000);
+    text-align: center;
+    /* Text/3 strong */
+    font-style: normal;
+    font-size: var(--txt-3-strong-value-font-size);
+    font-family: var( --txt-3-strong-value-font-family);
+    font-weight: var(--txt-3-strong-value-font-weight);
+    line-height: var(--txt-3-strong-value-line-height);
+    letter-spacing: var(--txt-3-strong-value-letter-spacing);
+}
+
+.Outlined-L{height: var(--l-height);} 
+.Outlined-M{height: var(--m-height);}
+.Outlined-S{height: var(--s-height);}
+.Outlined-XS{height: var(--xs-height);}
+
+
+.Outlined-XL:hover, .Outlined-L:hover, .Outlined-M:hover, .Outlined-S:hover, .Outlined-XS:hover{
+    border: 2px solid var(--brand-primary, #6F1DF4);
+}
+
+.Outlined-XL:active, .Outlined-L:active, .Outlined-M:active, .Outlined-S:active, .Outlined-XS:active{
+    border: 2px solid var(--brand-primary-tapped, #833CF8);
+}
+
+.Outlined-XL:disabled, .Outlined-L:disabled, .Outlined-M:disabled, .Outlined-S:disabled, .Outlined-XS:disabled{
+    border: 2px solid var(--brand-primary-50, rgba(111, 29, 244, 0.50));
+}
+
+.outlined--loading::before {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4" stroke="black" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    content: "";
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+
+  /* TRANSPARENT STYLE */
+
+  .Transparent-XL, .transparent--loading{
+    display: flex;
+    width: 325px; 
+    height: var(--xl-height);
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: var(--corner);
+    background: transparent;
+    box-sizing: border-box;
+
+    color: var(--brand-primary, #6F1DF4);
+    text-align: center;
+    /* Text/3 strong */
+    font-style: normal;
+    font-size: var(--txt-3-strong-value-font-size);
+    font-family: var( --txt-3-strong-value-font-family);
+    font-weight: var(--txt-3-strong-value-font-weight);
+    line-height: var(--txt-3-strong-value-line-height);
+    letter-spacing: var(--txt-3-strong-value-letter-spacing);
+}
+
+.Transparent-L{height: var(--l-height);} 
+.Transparent-M{height: var(--m-height);}
+.Transparent-S{height: var(--s-height);}
+.Transparent-XS{height: var(--xs-height);}
+
+.Transparent-XL:hover, .Transparent-L:hover, .Transparent-M:hover, .Transparent-S:hover, .Transparent-XS:hover{
+    border: none;
+    background: var(--gray-5-level, #E5E5EA);
+}
+
+.Transparent-XL:active, .Transparent-L:active, .Transparent-M:active, .Transparent-S:active, .Transparent-XS:active{
+    color: var(--brand-primary-tapped, #833CF8);
+}
+
+.Transparent-XL:disabled, .Transparent-L:disabled, .Transparent-M:disabled, .Transparent-S:disabled, .Transparent-XS:disabled{
+    color: var(--brand-primary-50, rgba(111, 29, 244, 0.50));
+}
+
+.transparent--loading::before {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    content: "";
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+
+  
+  @keyframes button-loading-spinner {
+    from {
+      transform: rotate(0turn);
+    }
+  
+    to {
+      transform: rotate(1turn);
+    }
+  }

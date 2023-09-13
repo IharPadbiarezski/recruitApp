@@ -1,0 +1,38 @@
+@import "https://mihapprod.zeroheight.com/api/token_management/token_set/2150/export?format=css";
+
+
+.Board {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 32px 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+
+.Surface{
+    display: flex;
+    padding: 80px;
+    align-items: flex-start;
+    gap: 40px;
+    border-radius: 5px;
+    border: 1px dashed var(--brand-primary);
+    box-sizing: border-box
+}
+
+p {
+    align-self: stretch;
+    
+    color: var(--brand-primary, #6F1DF4);
+
+    /* Text/1-regular */
+    font-size: var(--txt-1-regular-value-font-size, 200px);
+    font-family: var(--txt-1-regular-value-font-family, Inter);
+    font-weight: var(--txt-1-regular-value-font-weight, 400);
+    line-height: var(--txt-1-regular-value-line-height, 1.4);
+    letter-spacing: var(--txt-1-regular-value-letter-spacing, 100px);
+}

@@ -1,0 +1,18 @@
+.link, .none{
+    text-decoration-line: none;
+}
+
+.solid{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.dotted{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+
+.dashed{
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}

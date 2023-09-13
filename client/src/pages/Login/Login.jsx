@@ -1,8 +1,9 @@
 import React from 'react'
-import{ Link } from 'react-router-dom'
+import LinkNavigate from '../../components/UIKit/LinkNavigate/LinkNavigate'
+// import { Link } from 'react-router-dom'
 import FormNameRow from '../../components/FormNameRow/FormNameRow'
 import FormControlsRow from '../../components/FormControlsRow/FormControlsRow'
-import Input from '../../components/ui/uikit/Input/Input'
+import Input from '../../components/UIKit/Input/Input'
 import "./Login.css"
 
 const params = {
@@ -24,7 +25,7 @@ const params = {
 
 const ManageButtons = () => {
     return (
-        <Link to={'/restore'}>Забыли пароль?</Link>
+        <LinkNavigate to={'/restore'} text='Забыли пароль?' />
     )
 }
 

@@ -1,7 +1,10 @@
+@import "https://mihapprod.zeroheight.com/api/token_management/token_set/2150/export?format=css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: Inter, system-ui, serif;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -14,14 +17,18 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+a{
+  color: var(--brand-primary, #6F1DF4);
+  text-align: center;
+  
+  /* Caption/1 regular */
+  font-family: var(--cn-1-regular-value-font-family);
+  font-size: var(--cn-1-regular-value-font-size);
+  font-weight: var(--cn-1-regular-value-font-weight);
+  line-height: var(--cn-1-regular-value-line-height); 
+  letter-spacing: var(--cn-1-regular-value-letter-spacing); /* 19.6px */
 }
-a:hover {
-  color: #535bf2;
-}
+
 
 body {
   margin: 0;
@@ -34,7 +41,10 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: var(--text-txt-primaryy);
 }
+
+
 
 button {
   border-radius: 8px;

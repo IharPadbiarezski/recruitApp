@@ -1,0 +1,15 @@
+.link-navigate {
+    color: var(--text-txt-primary, #000);
+    text-align: center;
+    /* Text/3 strong */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    text-decoration: none;
+}
+
+.link-navigate:hover {
+    color: var(--text-txt-primary, #000);
+}
