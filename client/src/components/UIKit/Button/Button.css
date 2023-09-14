@@ -206,7 +206,8 @@
     animation: button-loading-spinner 1s ease infinite;
   }
 
-.icon-placeholder{
+
+.icon-placeholder-filled{
     background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.2222 2H3.77778C2.79594 2 2 2.79594 2 3.77778V16.2222C2 17.2041 2.79594 18 3.77778 18H16.2222C17.2041 18 18 17.2041 18 16.2222V3.77778C18 2.79594 17.2041 2 16.2222 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.889 8.22233C7.62538 8.22233 8.22233 7.62538 8.22233 6.889C8.22233 6.15262 7.62538 5.55566 6.889 5.55566C6.15262 5.55566 5.55566 6.15262 5.55566 6.889C5.55566 7.62538 6.15262 8.22233 6.889 8.22233Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.0001 12.6666L13.5556 8.22217L3.77783 17.9999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
     display: flex;
     width: 20px;
@@ -214,6 +215,25 @@
     justify-content: center;
     align-items: center;
 }
+
+.icon-placeholder-outlined{
+    background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.2222 2H3.77778C2.79594 2 2 2.79594 2 3.77778V16.2222C2 17.2041 2.79594 18 3.77778 18H16.2222C17.2041 18 18 17.2041 18 16.2222V3.77778C18 2.79594 17.2041 2 16.2222 2Z" stroke="%23303233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.889 8.22233C7.62538 8.22233 8.22233 7.62538 8.22233 6.889C8.22233 6.15262 7.62538 5.55566 6.889 5.55566C6.15262 5.55566 5.55566 6.15262 5.55566 6.889C5.55566 7.62538 6.15262 8.22233 6.889 8.22233Z" stroke="%23303233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.0001 12.6666L13.5556 8.22217L3.77783 17.9999" stroke="%23303233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-placeholder-transparent{
+    background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.2222 2H3.77778C2.79594 2 2 2.79594 2 3.77778V16.2222C2 17.2041 2.79594 18 3.77778 18H16.2222C17.2041 18 18 17.2041 18 16.2222V3.77778C18 2.79594 17.2041 2 16.2222 2Z" stroke="%236F1DF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.889 8.22233C7.62538 8.22233 8.22233 7.62538 8.22233 6.889C8.22233 6.15262 7.62538 5.55566 6.889 5.55566C6.15262 5.55566 5.55566 6.15262 5.55566 6.889C5.55566 7.62538 6.15262 8.22233 6.889 8.22233Z" stroke="%236F1DF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18.0001 12.6666L13.5556 8.22217L3.77783 17.9999" stroke="%236F1DF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
   @keyframes button-loading-spinner {
     from {
       transform: rotate(0turn);
