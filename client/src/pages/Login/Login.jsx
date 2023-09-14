@@ -1,9 +1,9 @@
 import React from 'react'
 import LinkNavigate from '../../components/UIKit/LinkNavigate/LinkNavigate'
-// import { Link } from 'react-router-dom'
 import FormNameRow from '../../components/FormNameRow/FormNameRow'
 import FormControlsRow from '../../components/FormControlsRow/FormControlsRow'
 import Input from '../../components/UIKit/Input/Input'
+import InputInvalidMessage from '../../components/UIKit/InputInvalidMessage/InputInvalidMessage'
 import "./Login.css"
 
 const params = {
@@ -12,14 +12,16 @@ const params = {
             label: "Эл. почта",
             id: "email",
             type: "email",
-            placeholder: "example@gmail.com"
+            placeholder: "example@gmail.com",
+            className: "invalid"
         },
         password: {
             label: "Пароль",
             id: "password",
             type: "password",
             placeholder: "Мин. 6 символов"
-        }
+        },
+        
     }
 }
 
@@ -38,6 +40,7 @@ const Login = () => {
     <form className='form-container'>
         <FormNameRow name={'Вход КрутРекрут'} />
         <Input input={params.inputs.email}/>
+        <InputInvalidMessage text={'Эл. почта или пароль введены неверно.'} />
         <Input input={params.inputs.password}/>
         <FormControlsRow manageButtons={ManageButtons} submitButtons={SubmitButtons} />
     </form>

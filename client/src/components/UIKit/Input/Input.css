@@ -27,3 +27,7 @@
     border: 1px solid var(--gray-5-level, #E5E5EA);
     background: var(--background-bg-primary, #FFF);
 }
+
+.input.invalid {
+    border: 1px solid var(--pallete-red, #FF3B30);
+}

@@ -5,6 +5,7 @@ import FormControlsRow from '../../components/FormControlsRow/FormControlsRow'
 import Link from '../../components/UIKit/Link/Link'
 import LinkNavigate from '../../components/UIKit/LinkNavigate/LinkNavigate'
 import "./RestorePassword.css"
+import FormText from '../../components/UIKit/FormText/FormText'
 
 const params = {
     inputs: {
@@ -14,6 +15,10 @@ const params = {
             type: "email",
             placeholder: "example@gmail.com"
         }
+    },
+    p: {
+        text: "Проверьте свою почту! Мы отправили вам ссылку для сброса пароля на example@gmail.com",
+        className: "display-none"
     }
 }
 
@@ -35,8 +40,11 @@ const SubmitButtons = () => {
 const RestorePassword = () => {
   return (
     <form className='form-container'>
-        <FormNameRow name={'Восстановление пароля'}/>
-        <Input input={params.inputs.email} />
+
+        <FormNameRow display={true} name={'Восстановление пароля'}/>
+        <Input display={true} input={params.inputs.email} />
+
+        <FormText values={params.p} />
 
         <FormControlsRow manageButtons={ManageButtons} submitButtons={SubmitButtons}/>
     </form>
