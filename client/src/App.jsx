@@ -7,6 +7,7 @@ import './App.css'
 import Login from './pages/Login/Login'
 import RestorePassword from './pages/RestorePassword/RestorePassword';
 import UIKit from './pages/UIKit/UIKit.jsx'
+import SetPassword from './pages/SetPassword/SetPassword';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/restore",
     element: <RestorePassword />,
+  },
+  {
+    path: "/password",
+    element: <SetPassword />,
   },
 ]);
 
