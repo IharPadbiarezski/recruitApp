@@ -53,7 +53,7 @@
 
 .label {
     display: flex;
-    padding-bottom: 0px;
+    padding-bottom: 8px;
     align-items: flex-start;
     gap: 10px;
     align-self: stretch;
