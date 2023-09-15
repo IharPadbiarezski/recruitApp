@@ -1,13 +1,27 @@
 import React from 'react'
 import Button from '../../components/UIKit/Button/Button'
 import Link from '../../components/UIKit/Link/Link'
+import Input from '../../components/UIKit/Input/Input'
+import './UIKit.css'
 
-
-import "./UIKit.css"
-
-
- 
-
+const params = {
+    inputs: {
+        email: {
+            label: "Title",
+            id: "email",
+            type: "email",
+            placeholder: "example@gmail.com",
+            className: "invalid"
+        },
+        password: {
+            label: "Пароль",
+            id: "password",
+            type: "password",
+            placeholder: "Мин. 6 символов"
+        },
+        
+    }
+}
 
 const UIKit = () => {
 
@@ -32,9 +46,18 @@ const UIKit = () => {
                 <Button style={'filled-xl-hug'} iconL={'icon-placeholder-filled'} text={'Filled'} />
             {/* <button className='Filled'>Button</button> */}
              </div>
+             <p>&Input</p>
+             <div className='Surface'>
+             <Input style={'default'} input={params.inputs.email} helpText={'Help Text'}/>
+             </div>
         </div>
     )
   }
 
 
   export default UIKit
+
+
+
+
+
