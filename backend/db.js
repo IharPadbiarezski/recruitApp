@@ -8,3 +8,5 @@ const db = mysql.createConnection({
     database: process.env.DB_DATABASE
 
 })
+
+export default db

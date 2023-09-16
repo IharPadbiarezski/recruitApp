@@ -1,22 +1,39 @@
 import express from "express"
-import authRoutes from "./routes/auth"
-import userRoutes from "./routes/users"
+import cookieParser from "cookie-parser";
+import multer from "multer";
+// import cors from "cors"
+import authRoutes from "./routes/auth.js"
+import userRoutes from "./routes/users.js"
 import "dotenv/config"
 
 const app = express()
 
-const db = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE
+app.use(express.json());
+app.use(cookieParser());
 
-})
+// app.use(
+//     cors({origin: ['http://localhost:5173', 'http://127.0.0.1:5173']})
+// );
 
-app.use(express.json())
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null, "../client/public/upload");
+    },
+    filename: function (req, file, cb) {
+      cb(null, Date.now() + file.originalname);
+    },
+  });
+  
+  const upload = multer({ storage });
+  
+  app.post("/api/upload", upload.single("file"), function (req, res) {
+    const file = req.file;
+    res.status(200).json(file.filename);
+  });
+
 app.use("api/auth", authRoutes)
 app.use("api/users", userRoutes)
 
 app.listen(process.env.PORT, () => {
-    console.log("hi")
+    console.log("Connected!")
 })
