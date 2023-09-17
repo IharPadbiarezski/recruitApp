@@ -31,8 +31,8 @@ const storage = multer.diskStorage({
     res.status(200).json(file.filename);
   });
 
-app.use("api/auth", authRoutes)
-app.use("api/users", userRoutes)
+app.use("/auth", authRoutes)
+app.use("/users", userRoutes)
 
 app.listen(process.env.PORT, () => {
     console.log("Connected!")
