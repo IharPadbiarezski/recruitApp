@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
-import { useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
 import LinkNavigate from '../../components/UIKit/LinkNavigate/LinkNavigate'
 import FormNameRow from '../../components/FormNameRow/FormNameRow'
 import FormControlsRow from '../../components/FormControlsRow/FormControlsRow'
@@ -55,7 +53,7 @@ const Login = () => {
                 type: "email",
                 name: "email",
                 placeholder: "example@gmail.com",
-                className: "invalid",
+                className: `${err ? "invalid" : ""}`,
                 onChange: handleChange
             },
             password: {
@@ -75,7 +73,7 @@ const Login = () => {
         <form className='form-container'>
             <FormNameRow name={'Вход КрутРекрут'} />
             <Input input={params.inputs.email}/>
-            {err && <InputInvalidMessage text={'Эл. почта или пароль введены неверно.'} />}
+            {err && <InputInvalidMessage text={err} />}
             <Input input={params.inputs.password}/>
             <FormControlsRow manageButtons={ManageButtons} submitButtons={SubmitButtons} />
         </form>

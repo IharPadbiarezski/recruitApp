@@ -3,7 +3,7 @@ import './FormText.css'
 
 const FormText = ({ values }) => {
   return (
-    <p className={`form-text ${values.className}`}>{values.text}</p>
+    <p className="form-text">{values.text}</p>
   )
 }
 

@@ -18,12 +18,20 @@ export const AuthContexProvider = ({ children }) => {
     setCurrentUser(null);
   };
 
+  const restore = async (inputs) => {
+    await axios.post("/api/auth/restorePassword", inputs);
+  };
+
+  const setPassword = async (inputs) => {
+    await axios.post("/api/auth/setPassword", inputs);
+  };
+
   useEffect(() => {
     localStorage.setItem("user", JSON.stringify(currentUser));
   }, [currentUser]);
 
   return (
-    <AuthContext.Provider value={{ currentUser, login, logout }}>
+    <AuthContext.Provider value={{ currentUser, login, logout, restore, setPassword }}>
       {children}
     </AuthContext.Provider>
   );
