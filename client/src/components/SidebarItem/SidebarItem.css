@@ -1,0 +1,13 @@
+.sidebar-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    height: 48px;
+}
+
+.sidebar-item-container svg:hover {
+    fill: #6F1DF4;
+    fill-opacity: 1;
+}
