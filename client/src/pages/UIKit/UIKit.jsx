@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../../components/UIKit/Button/Button'
 import Link from '../../components/UIKit/Link/Link'
 import Input from '../../components/UIKit/Input/Input'
+import Textarea from '../../components/UIKit/Textarea/Textarea'
 import './UIKit.css'
 
 const params = {
@@ -20,8 +21,23 @@ const params = {
             placeholder: "Мин. 6 символов"
         },
         
-    }
+    }/*,
+    textarea: {
+        email: {
+            label: "Title",
+            id: "email",
+            type: "email",
+            placeholder: "example@gmail.com",
+            className: "invalid"
+        }
+        
+    }*/
 }
+
+
+
+
+
 
 const UIKit = () => {
 
@@ -50,6 +66,13 @@ const UIKit = () => {
              <div className='Surface'>
              <Input style={'default'} input={params.inputs.email} helpText={'Help Text'}/>
              </div>
+
+
+             <p>&Textarea</p>
+             <div className='Surface'>
+             <Textarea style={'txtarea-default'} textarea={params.inputs.email} helpText={'Help Text'}/>
+             </div>
+
         </div>
     )
   }
