@@ -1,0 +1,15 @@
+.vacancies-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--background-bg-primary, #FFF);
+}
+
+.plus-button {
+    position: absolute;
+    right: 19px;
+    top: 30px;
+    cursor: pointer;
+}
