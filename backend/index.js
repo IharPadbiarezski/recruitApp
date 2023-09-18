@@ -4,6 +4,7 @@ import multer from "multer";
 // import cors from "cors"
 import authRoutes from "./routes/auth.js"
 import userRoutes from "./routes/users.js"
+import vacantiesRoutes from "./routes/vacancies.js"
 import "dotenv/config"
 
 const app = express()
@@ -33,6 +34,7 @@ const storage = multer.diskStorage({
 
 app.use("/auth", authRoutes)
 app.use("/users", userRoutes)
+app.use("/vacancies", vacantiesRoutes)
 
 app.listen(process.env.PORT, () => {
     console.log("Connected!")

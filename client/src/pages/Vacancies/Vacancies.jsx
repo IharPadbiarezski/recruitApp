@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from "axios";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider';
@@ -76,6 +77,19 @@ const items = [
 ]
 
 const Vacancies = () => {
+  const [vacanties, setVacancies] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get("/api/vacancies/");
+        setVacancies(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchData();
+  }, []);
 
   const handleAddVacancy = () => {
     alert("clicked!");
@@ -83,20 +97,18 @@ const Vacancies = () => {
 
   return (
     <div className="vacancies-container">
-      <div>
-      <svg onClick={handleAddVacancy} className="plus-button" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <rect x="11" y="4.00012" width="2" height="16" fill="#363F43" fill-opacity="0.6"/>
-        <rect x="4" y="13.0001" width="2" height="16" transform="rotate(-90 4 13.0001)" fill="#363F43" fill-opacity="0.6"/>
-      </svg>
-      </div>
+        <svg onClick={handleAddVacancy} className="plus-button" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <rect x="11" y="4.00012" width="2" height="16" fill="#363F43" fillOpacity="0.6"/>
+          <rect x="4" y="13.0001" width="2" height="16" transform="rotate(-90 4 13.0001)" fill="#363F43" fillOpacity="0.6"/>
+        </svg>
       <h1>Вакансии</h1>
       
       <List sx={{ width: '100%', maxWidth: 900, maxHeight: 500, overflow: 'auto', bgcolor: 'background.paper' }}>
-      {items.map((item, index) => {
+      {vacanties.map((vacancy, index) => {
         return <>
         {index !== 0 && <Divider />}
         <ListItem 
-          key={item.id} 
+          key={vacancy.id} 
           alignItems="flex-start"
           secondaryAction={
             <IconButton edge="end" aria-label="comments">
@@ -106,7 +118,7 @@ const Vacancies = () => {
           >
           
         <ListItemText
-          primary={item.name}
+          primary={vacancy.name}
           secondary={
             <React.Fragment>
               <Typography
@@ -115,7 +127,7 @@ const Vacancies = () => {
                 variant="body2"
                 color="text.primary"
               >
-                {item.companyName}
+                {vacancy.companyName}
               </Typography>
             </React.Fragment>
           }
@@ -130,7 +142,7 @@ const Vacancies = () => {
                 variant="body2"
                 color="text.primary"
               >
-                {item.headName}
+                {vacancy.headName}
               </Typography>
             </React.Fragment>
           }
@@ -145,7 +157,7 @@ const Vacancies = () => {
                 variant="body2"
                 color="text.primary"
               >
-                {item.responsibleName}
+                {vacancy.responsibleName}
               </Typography>
             </React.Fragment>
           }
