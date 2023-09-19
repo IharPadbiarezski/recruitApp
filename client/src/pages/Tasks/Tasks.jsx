@@ -15,8 +15,8 @@ const Tasks = () => {
   const [selectedTaskId, setSelectedTaskId] = useState(0)
 
   const [instruction, setInstruction] = useState({
-    name: 'Instruction name',
-    link: "http://localhost/test"
+    name: '',
+    link: ''
   })
 
   useEffect(() => {
@@ -25,6 +25,7 @@ const Tasks = () => {
         const res = await axios.get("/api/tasks/");
         setTasks(res.data);
         setSelectedTaskId(res.data[0].id);
+        setInstruction(res.data[0]);
       } catch (err) {
         console.log(err);
       }
@@ -34,18 +35,19 @@ const Tasks = () => {
 
 
 
-  const handleToggle = (value) => () => {
-    const currentIndex = checked.indexOf(value);
+  const handleToggle = (task) => () => {
+    const currentIndex = checked.indexOf(task.id);
     const newChecked = [...checked];
 
     if (currentIndex === -1) {
-      newChecked.push(value);
+      newChecked.push(task.id);
     } else {
       newChecked.splice(currentIndex, 1);
     }
 
     setChecked(newChecked);
-    setSelectedTaskId(value);
+    setSelectedTaskId(task.id);
+    setInstruction(task)
   };
 
 
@@ -62,7 +64,7 @@ const Tasks = () => {
                   key={task.id}
                   disablePadding
                 >
-                  <ListItemButton selected={task.id === selectedTaskId} role={undefined} onClick={handleToggle(task.id)} dense>
+                  <ListItemButton selected={task.id === selectedTaskId} role={undefined} onClick={handleToggle(task)} dense>
                     <ListItemIcon>
                       <Checkbox
                         edge="start"

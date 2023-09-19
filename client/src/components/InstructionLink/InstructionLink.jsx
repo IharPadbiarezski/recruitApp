@@ -6,7 +6,7 @@ const InstructionLink = ({ instruction }) => {
     <>
         <h4 className='instruction-name'>{ instruction.name}</h4>
         <p className='instruction-link-label'>Ссылка на инструкцию</p>
-        <a className='instruction-link'>{ instruction.link }</a>
+        <a className='instruction-link' target='_blank' href={instruction.link} >{ instruction.link }</a>
     </>
   )
 }
