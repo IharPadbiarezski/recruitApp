@@ -4,9 +4,10 @@ import multer from "multer";
 import accessLevelsRoutes from "./routes/accessLevels.js"
 import authRoutes from "./routes/auth.js"
 import companiesRoutes from "./routes/companies.js"
-import rolesRoutes from "./routes/roles.js"
-import usersRoutes from "./routes/users.js"
 import vacantiesRoutes from "./routes/vacancies.js"
+import rolesRoutes from "./routes/roles.js"
+import tasksRoutes from "./routes/tasks.js"
+import usersRoutes from "./routes/users.js"
 import "dotenv/config"
 
 const app = express()
@@ -33,9 +34,10 @@ const storage = multer.diskStorage({
 app.use("/accessLevels", accessLevelsRoutes)
 app.use("/auth", authRoutes)
 app.use("/companies", companiesRoutes)
-app.use("/roles", rolesRoutes)
-app.use("/users", usersRoutes)
 app.use("/vacancies", vacantiesRoutes)
+app.use("/roles", rolesRoutes)
+app.use("/tasks", tasksRoutes)
+app.use("/users", usersRoutes)
 
 app.listen(process.env.PORT, () => {
     console.log("Connected!")
