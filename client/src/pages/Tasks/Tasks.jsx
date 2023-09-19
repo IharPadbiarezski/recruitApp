@@ -12,6 +12,7 @@ import './Tasks.css'
 const Tasks = () => {
   const [checked, setChecked] = useState([0]);
   const [tasks, setTasks] = useState([]);
+  const [selectedTaskId, setSelectedTaskId] = useState(0)
 
   const [instruction, setInstruction] = useState({
     name: 'Instruction name',
@@ -23,6 +24,7 @@ const Tasks = () => {
       try {
         const res = await axios.get("/api/tasks/");
         setTasks(res.data);
+        setSelectedTaskId(res.data[0].id);
       } catch (err) {
         console.log(err);
       }
@@ -43,6 +45,7 @@ const Tasks = () => {
     }
 
     setChecked(newChecked);
+    setSelectedTaskId(value);
   };
 
 
@@ -59,7 +62,7 @@ const Tasks = () => {
                   key={task.id}
                   disablePadding
                 >
-                  <ListItemButton role={undefined} onClick={handleToggle(task.id)} dense>
+                  <ListItemButton selected={task.id === selectedTaskId} role={undefined} onClick={handleToggle(task.id)} dense>
                     <ListItemIcon>
                       <Checkbox
                         edge="start"
