@@ -44,19 +44,20 @@ export const addVacancy = (req, res) => {
         if (err) return res.status(403).json("Токен не валиден!");
   
       const q =
-        "INSERT INTO posts(`name`, `companyId`, `passport`, `headId`, `responsibleId`) VALUES (?)";
+        "INSERT INTO vacancies(`name`, `companyId`, `passport`) VALUES (?)";
   
       const values = [
         req.body.name,
         req.body.companyId,
-        req.body.passport,
-        req.body.headId,
-        req.body.responsibleId,
+        req.body.passport || "",
+        // req.body.headId || "",
+        // req.body.responsibleId || "",
       ];
   
       db.query(q, [values], (err, data) => {
         if (err) return res.status(500).json(err);
-        return res.json("Вакансия создана успешно.");
+        data.message = "Вакансия создана успешно."
+        return res.json(data);
       });
     });
   };

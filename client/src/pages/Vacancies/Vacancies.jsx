@@ -30,12 +30,7 @@ const Vacancies = () => {
 
   const handleVacancyClick = (e) => {
     console.log(e);
-    debugger;
     navigate(`/workspace`)
-  }
-
-  const handleAddVacancy = () => {
-    alert("clicked!");
   }
 
   return (

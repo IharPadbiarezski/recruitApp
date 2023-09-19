@@ -13,6 +13,7 @@ export const getCompanies = (req, res) => {
         db.query(q, [], (err, data) => {
             if (err) return res.status(500).send(err);
 
+            data = [{id: -1, name: "Не выбрана"}].concat(data);
             return res.status(200).json(data);
         });
     })

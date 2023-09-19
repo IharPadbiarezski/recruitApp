@@ -28,7 +28,7 @@ const NewVacancy = () => {
 
     const [inputs, setInputs] = useState({
         name: "",
-        companyId: "",
+        companyId: 0,
         passport: "",
     });
     
@@ -36,8 +36,15 @@ const NewVacancy = () => {
         setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
 
-    const handleSubmit = () => {
-
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+                const res = await axios.post("/api/vacancies/", inputs);
+                navigate("/workspace/");
+                // navigate(`/workspace/${res.data.insertId}`);
+        } catch (err) {
+          console.log(err.response.data);
+        }
     }
 
     const navigate = useNavigate();
