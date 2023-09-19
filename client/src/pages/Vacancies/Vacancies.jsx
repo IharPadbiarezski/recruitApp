@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -7,74 +8,8 @@ import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import NewVacancy from '../../popups/NewVacancy/NewVacancy';
 import './Vacancies.css'
-
-
-const items = [
-  {
-    id: 1,
-    name: "Developer",
-    companyName: "Epam",
-    headName: "Ihar Padbiarezski",
-    responsibleName: "Misha Padbiarezski"
-  },
-  {
-    id: 2,
-    name: "Developer2",
-    companyName: "Epam",
-    headName: "Ihar Padbiarezski",
-    responsibleName: "Misha Padbiarezski"
-  },
-  {
-    id: 3,
-    name: "Developer1",
-    companyName: "Epam",
-    headName: "Ihar Padbiarezski",
-    responsibleName: "Misha Padbiarezski"
-  },
-  {
-    id: 4,
-    name: "Developer",
-    companyName: "Epam",
-    headName: "Ihar Padbiarezski",
-    responsibleName: "Misha Padbiarezski"
-  },
-  {
-    id: 5,
-    name: "Developer2",
-    companyName: "Epam",
-    headName: "Ihar Padbiarezski",
-    responsibleName: "Misha Padbiarezski"
-  },
-  {
-    id: 6,
-    name: "Developer1",
-    companyName: "Epam",
-    headName: "Ihar Padbiarezski",
-    responsibleName: "Misha Padbiarezski"
-  },
-  {
-    id: 7,
-    name: "Developer",
-    companyName: "Epam",
-    headName: "Ihar Padbiarezski",
-    responsibleName: "Misha Padbiarezski"
-  },
-  {
-    id: 8,
-    name: "Developer2",
-    companyName: "Epam",
-    headName: "Ihar Padbiarezski",
-    responsibleName: "Misha Padbiarezski"
-  },
-  {
-    id: 9,
-    name: "Developer1",
-    companyName: "Epam",
-    headName: "Ihar Padbiarezski",
-    responsibleName: "Misha Padbiarezski"
-  }
-]
 
 const Vacancies = () => {
   const [vacanties, setVacancies] = useState([]);
@@ -91,16 +26,21 @@ const Vacancies = () => {
     fetchData();
   }, []);
 
+  const navigate = useNavigate();
+
+  const handleVacancyClick = (e) => {
+    console.log(e);
+    debugger;
+    navigate(`/workspace`)
+  }
+
   const handleAddVacancy = () => {
     alert("clicked!");
   }
 
   return (
     <div className="vacancies-container">
-        <svg onClick={handleAddVacancy} className="plus-button" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <rect x="11" y="4.00012" width="2" height="16" fill="#363F43" fillOpacity="0.6"/>
-          <rect x="4" y="13.0001" width="2" height="16" transform="rotate(-90 4 13.0001)" fill="#363F43" fillOpacity="0.6"/>
-        </svg>
+      <NewVacancy />
       <h1>Вакансии</h1>
       
       <List sx={{ width: '100%', maxWidth: 900, maxHeight: 500, overflow: 'auto', bgcolor: 'background.paper' }}>
@@ -111,8 +51,8 @@ const Vacancies = () => {
           key={vacancy.id} 
           alignItems="flex-start"
           secondaryAction={
-            <IconButton edge="end" aria-label="comments">
-              <NavigateNextIcon />
+            <IconButton edge="end" aria-label="information" onClick={handleVacancyClick} >
+              <NavigateNextIcon  />
             </IconButton>
           }
           >
@@ -172,4 +112,4 @@ const Vacancies = () => {
   )
 }
 
-export default Vacancies
+export default Vacancies 

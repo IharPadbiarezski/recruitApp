@@ -1,0 +1,6 @@
+.plus-button {
+    position: absolute;
+    right: 19px;
+    top: 30px;
+    cursor: pointer;
+}
