@@ -1,10 +1,9 @@
 import express from "express"
 import cookieParser from "cookie-parser";
 import multer from "multer";
-// import cors from "cors"
 import authRoutes from "./routes/auth.js"
 import companiesRoutes from "./routes/companies.js"
-import userRoutes from "./routes/users.js"
+import usersRoutes from "./routes/users.js"
 import vacantiesRoutes from "./routes/vacancies.js"
 import "dotenv/config"
 
@@ -12,10 +11,6 @@ const app = express()
 
 app.use(express.json());
 app.use(cookieParser());
-
-// app.use(
-//     cors({origin: ['http://localhost:5173', 'http://127.0.0.1:5173']})
-// );
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -35,7 +30,7 @@ const storage = multer.diskStorage({
 
 app.use("/auth", authRoutes)
 app.use("/companies", companiesRoutes)
-app.use("/users", userRoutes)
+app.use("/users", usersRoutes)
 app.use("/vacancies", vacantiesRoutes)
 
 app.listen(process.env.PORT, () => {
