@@ -1,0 +1,15 @@
+.tasks-page-container {
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    background: var(--background-bg-primary, #FFF);
+    padding: 0 16px;
+}
+
+.tasks-container {
+    width: 50%;
+}
+
+.task-container {
+    width: 50%;
+}

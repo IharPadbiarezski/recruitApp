@@ -1,10 +1,10 @@
 import express from "express";
 import {
-  getRoles
-} from "../controllers/roles.js";
+  getAccessLevels
+} from "../controllers/accessLevels.js";
 
 const router = express.Router();
 
-router.get("/", getRoles);
+router.get("/", getAccessLevels);
 
 export default router;

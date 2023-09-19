@@ -1,0 +1,10 @@
+.content {
+    padding: 48px;
+    box-sizing: border-box;
+}
+
+.popup-controls-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 48px 48px;
+}

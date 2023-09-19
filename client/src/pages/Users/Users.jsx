@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { AgGridReact } from 'ag-grid-react';
 import axios from "axios";
+import InviteUser from '../../popups/InviteUser/InviteUser';
 import './Users.css'
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-material.css';
@@ -40,7 +41,7 @@ const defaultColDef = useMemo( ()=> ({
 
   return (
     <div className='users-container'>
-
+      <InviteUser />
       <h1>Пользователи</h1>
       <div className="ag-theme-material" style={{height: 500, width: 1200}}>
         <AgGridReact
