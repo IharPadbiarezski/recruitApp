@@ -3,6 +3,7 @@ import cookieParser from "cookie-parser";
 import multer from "multer";
 // import cors from "cors"
 import authRoutes from "./routes/auth.js"
+import companiesRoutes from "./routes/companies.js"
 import userRoutes from "./routes/users.js"
 import vacantiesRoutes from "./routes/vacancies.js"
 import "dotenv/config"
@@ -33,6 +34,7 @@ const storage = multer.diskStorage({
   });
 
 app.use("/auth", authRoutes)
+app.use("/companies", companiesRoutes)
 app.use("/users", userRoutes)
 app.use("/vacancies", vacantiesRoutes)
 

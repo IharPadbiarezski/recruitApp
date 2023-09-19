@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
+import axios from "axios";
 import Popup from 'reactjs-popup';
 import Input from '../../components/UIKit/Input/Input';
 import Select from '../../components/UIKit/Select/Select';
@@ -10,6 +11,20 @@ import './NewVacancy.css'
 
 
 const NewVacancy = () => {
+
+    const [companies, setCompanies] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const res = await axios.get("/api/companies/");
+            setCompanies(res.data);
+          } catch (err) {
+            console.log(err);
+          }
+        };
+        fetchData();
+      }, []);
 
     const [inputs, setInputs] = useState({
         name: "",
@@ -88,7 +103,7 @@ const NewVacancy = () => {
                     <h2>Создание новой вакансии</h2>
                     <form>
                         <Input input={params.inputs.name} />
-                        <Select select={params.selects.company} options={options} />
+                        <Select select={params.selects.company} options={companies} />
                         <Input input={params.inputs.passport} />
                     </form>
                 </div>
