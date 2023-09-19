@@ -52,17 +52,6 @@ const NewVacancy = () => {
     //     }
     // };
 
-    const options = [
-        {
-            id: 1,
-            name: "epam"
-        },
-        {
-            id: 2,
-            name: "Google"
-        }
-    ]
-
     const params = {
         inputs: {
             name: {
