@@ -1,0 +1,11 @@
+.vacancy-card-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: var(--background-bg-primary, #FFF);
+    height: 69px;
+    box-sizing: content-box;
+    margin-right: 2px;
+}

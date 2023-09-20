@@ -67,6 +67,7 @@ const RestorePassword = () => {
                 name: "email",
                 placeholder: "example@gmail.com",
                 className: `${err ? "invalid" : ""}`,
+                value: inputs.email,
                 onChange: handleChange
             }
         },

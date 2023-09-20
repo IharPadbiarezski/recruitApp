@@ -12,7 +12,7 @@ const Input = ({ input }) => {
           name={input.name}
           type={input.type} 
           placeholder={input.placeholder}
-          onChange={input.onChange}
+          onChange={input.onChange || ''}
           value={input.value || ''}
         />
     </div>

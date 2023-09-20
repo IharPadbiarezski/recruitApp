@@ -54,6 +54,7 @@ const Login = () => {
                 name: "email",
                 placeholder: "example@gmail.com",
                 className: `${err ? "invalid" : ""}`,
+                value: inputs.email,
                 onChange: handleChange
             },
             password: {
@@ -62,6 +63,7 @@ const Login = () => {
                 type: "password",
                 name: "password",
                 placeholder: "Мин. 6 символов",
+                value: inputs.password,
                 onChange: handleChange
             },
             

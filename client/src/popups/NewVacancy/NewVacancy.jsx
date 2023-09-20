@@ -67,6 +67,7 @@ const NewVacancy = () => {
                 type: "text",
                 name: "name",
                 placeholder: "Название вакансии",
+                value: inputs.name,
                 onChange: handleChange
             },
             passport: {
@@ -75,7 +76,9 @@ const NewVacancy = () => {
                 type: "url",
                 name: "passport",
                 placeholder: "Ссылка",
+                value: inputs.passport,
                 onChange: handleChange
+                
             },
             
         },

@@ -4,10 +4,9 @@ import Input from '../UIKit/Input/Input'
 import './InstructionLink.css'
 
 const InstructionLink = ({ instruction }) => {
-    console.log(instruction)
     const [inputs, setInputs] = useState({
-        id: instruction.id,
-        link: ""
+        id: instruction.id || "",
+        link: instruction.link || ""
     });
 
     const handleChange = (e) => {
@@ -28,7 +27,7 @@ const InstructionLink = ({ instruction }) => {
         id: "link",
         type: "url",
         name: "link",
-        value: instruction.link,
+        value: inputs.link || instruction.link,
         placeholder: "Введите ссылку",
         onChange: handleChange
     }

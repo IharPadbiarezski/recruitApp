@@ -43,6 +43,7 @@ const SetPassword = () => {
                 type: "password",
                 name: "password",
                 placeholder: "Мин. 6 символов",
+                value: inputs.password,
                 onChange: handleChange
             },
             passwordRepeat: {
@@ -51,6 +52,7 @@ const SetPassword = () => {
                 type: "password",
                 name: "confirmPassword",
                 placeholder: "Подтвердите новый пароль",
+                value: inputs.passwordRepeat,
                 onChange: handleChange
             },
         }

@@ -81,7 +81,8 @@ const InviteUser = () => {
                 type: "email",
                 name: "email",
                 placeholder: "Эл. адрес пользователя",
-                onChange: handleChange
+                onChange: handleChange,
+                value: inputs.email
             },
         },
         selects: {
