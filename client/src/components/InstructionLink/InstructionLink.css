@@ -1,3 +1,10 @@
+.instruction-link-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
 .instruction-name {
     color: var(--text-txt-primary, #000);
     text-align: center;
@@ -9,17 +16,6 @@
     line-height: 140%; /* 22.4px */
 }
 
-.instruction-link-label {
-    color: var(--text-txt-primary, #000);
-    /* Text/3 regular */
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 22.4px */
-}
-
-.instruction-link {
-    color: #000;
-    cursor: pointer;
+.instruction-link-controls-container {
+    text-align: end;
 }

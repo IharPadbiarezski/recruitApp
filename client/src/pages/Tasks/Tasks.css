@@ -3,7 +3,7 @@
     display: flex;
     border-radius: 8px;
     background: var(--background-bg-primary, #FFF);
-    padding: 0 16px;
+    padding: 0 16px 16px 16px;
 }
 
 .tasks-container {

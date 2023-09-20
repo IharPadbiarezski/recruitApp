@@ -13,6 +13,7 @@ const Input = ({ input }) => {
           type={input.type} 
           placeholder={input.placeholder}
           onChange={input.onChange}
+          value={input.value || ''}
         />
     </div>
   )

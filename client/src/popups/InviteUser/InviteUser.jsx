@@ -65,9 +65,9 @@ const InviteUser = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-                const res = await axios.post("/api/users/", inputs);
+            const res = await axios.post("/api/users/", inputs);
 
-                // navigate("/users");
+            // navigate("/users");
         } catch (err) {
           console.log(err.response.data);
         }
