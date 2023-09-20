@@ -19,7 +19,7 @@ const Profile = () => {
 };
 
   return (
-    <div>
+    <div className='profile-page-container'>
       <div>Profile</div>
       <button onClick={handleLogoutCLick}>Выйти</button>
     </div>
