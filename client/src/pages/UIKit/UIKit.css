@@ -2,9 +2,7 @@
 
 
 .Board {
-    display: flex;
-    width: 1240px;
-    height: 1000px;
+    display: fixed;
     padding: 32px 64px;
     
     justify-content: center;

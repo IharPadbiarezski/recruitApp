@@ -57,9 +57,9 @@ const UIKit = () => {
             <p>&Buttons</p>
             <div className='Surface'>
                 <Button style={'filled-xl-fixed'} text={'Filled'} />
-                <Button style={'outlined-xl-fixed'} text={'Outlined'} iconR={'icon-placeholder-outlined'} />
-                <Button style={'transparent-xl-fixed'} iconL={'icon-placeholder-transparent'} text={'Transparent'} />
-                <Button style={'filled-xl-hug'} iconL={'icon-placeholder-filled'} text={'Filled'} />
+                <Button style={'primary-xl-fixed'} text={'Primary'} iconR={'icon-placeholder-primary'} />
+                <Button style={'secondary-xl-fixed'} iconL={'icon-placeholder-transparent'} text={'Secondary'} />
+                <Button style={'danger-xl-hug'} iconL={'icon-placeholder-danger'} text={'Danger'} />
             {/* <button className='Filled'>Button</button> */}
              </div>
              <p>&Input</p>
@@ -72,6 +72,7 @@ const UIKit = () => {
              <div className='Surface'>
              <Textarea style={'txtarea-default'} textarea={params.inputs.email} helpText={'Help Text'}/>
              </div>
+
 
         </div>
     )
