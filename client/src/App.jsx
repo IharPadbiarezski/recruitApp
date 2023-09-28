@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom'
 import './App.css'
 import UIKit from './pages/UIKit/UIKit.jsx'
+import Screen from './pages/screen/screen.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/uikit",
     element: <UIKit/>,
+  },
+  {
+    path: "/screen",
+    element: <Screen/>,
   },
 ]);
 

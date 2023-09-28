@@ -1,0 +1,37 @@
+@import "https://mihapprod.zeroheight.com/api/token_management/token_set/2150/export?format=css";
+
+
+.Surface{
+    display: flex;
+    width: 1440px;
+    height: 100%;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+}
+
+.SideBar{
+    display: flex;
+    width: 72px;
+    height: 887px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-shrink: 0;
+    box-sizing: border-box;
+
+    background-color: #0d4561;
+}
+
+.Content{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
+    background: var(--background-bg-secondary, #F3F5F6);
+    box-sizing: border-box;
+
+    background-color: aquamarine;
+}

@@ -3,7 +3,19 @@ import Button from '../../components/UIKit/Button/Button'
 import Link from '../../components/UIKit/Link/Link'
 import Input from '../../components/UIKit/Input/Input'
 import Textarea from '../../components/UIKit/Textarea/Textarea'
+
+import TodoListRecruiter from '../../components/todo-list/todo-list-rectuiter'
+import TodoListLeader from '../../components/todo-list/todo-list-leader'
+
+
+{/*
+import Header from '../../components/todo-list/header/header'
+import Recruiter from '../../components/todo-list/recruiter/recruiter'
+import Task from '../../components/todo-list/task/task'
+import CandidateItem from '../../components/todo-list/candidate-item/candidate-item'*/}
+
 import './UIKit.css'
+
 
 const params = {
     inputs: {
@@ -72,6 +84,19 @@ const UIKit = () => {
              <div className='Surface'>
              <Textarea style={'txtarea-default'} textarea={params.inputs.email} helpText={'Help Text'}/>
              </div>
+             {/*<Header title={'ToDo Header'}  icon={'angle-expanded'}/>
+             <Recruiter avatar={'avatar-placeholder'} name={'Michael Parry'}/>
+             <Task style={'task-lvl-1'} icon={'angle-expanded'} task={'Task'}/>
+             <Task style={'task-lvl-2'} icon={'i-checkbox'} task={'Task 1'}/>
+             <Task style={'task-lvl-3'} icon={'i-checkbox'} task={'Task'}/>
+             <Task style={'task-lvl-2'} icon={'i-comment'} task={'Task 2'}/>
+             <CandidateItem avatar={'avatar'} name={'Michael Parry'} status={'Добавлен'}/>
+    <div></div>*/}
+            <div className="to-do">
+             <TodoListRecruiter/>
+             <TodoListLeader/> </div>
+             
+
 
 
         </div>

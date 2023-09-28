@@ -1,0 +1,30 @@
+.tasks{
+    display: flex;
+    width: 480px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    box-sizing: border-box;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    align-self: stretch;
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.candidates{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    align-self: stretch;
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+}

@@ -36,3 +36,9 @@ p {
     line-height: var(--txt-1-regular-value-line-height, 1.4);
     letter-spacing: var(--txt-1-regular-value-letter-spacing, 100px);
 }
+
+.to-do{
+    display: inline-flex;
+    gap: 50px;
+    margin-top: 50px;
+}

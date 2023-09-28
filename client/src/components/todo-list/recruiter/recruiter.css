@@ -1,0 +1,43 @@
+
+.recruiter{
+    display: flex;
+    width: 480px;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    flex: 1 0 0;
+    background: var(--background-bg-primary, #FFF);
+    cursor: pointer;
+}
+
+.recruiter:active{
+    border-left: 2px solid var(--brand-primary, #6F1DF4);
+    padding-left: 14px;
+}
+
+label{
+    margin:0%;
+    color: var(--text-txt-primary, #000);
+
+    cursor: pointer;
+
+    /* Text/3 regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+
+}
+
+.avatar-placeholder{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 4px;
+    background-image: url('img/avatar-placeholder.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
